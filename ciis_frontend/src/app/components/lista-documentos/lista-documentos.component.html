@@ -1,0 +1,21 @@
+<h2>Lista de Documentos</h2>
+
+<div *ngIf="cargando">
+  <p>Cargando documentos...</p>
+</div>
+
+<div *ngIf="error" class="error">
+  <p>{{ error }}</p>
+</div>
+
+<div *ngIf="!cargando && !error && documentos.length > 0">
+  <ul>
+    <li *ngFor="let doc of documentos">
+      <strong>{{ doc.titulo }}</strong> (Tipo: {{ doc.tipo_documento_display }}) - Autor: {{ doc.autor_principal_username }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!cargando && !error && documentos.length === 0">
+  <p>No hay documentos para mostrar.</p>
+</div>

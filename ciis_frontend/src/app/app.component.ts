@@ -1,9 +1,11 @@
+// Ubicación: src/app/app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router'; // 1. Importa RouterLink
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, RouterLink], // 2. Añádelo a los imports
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

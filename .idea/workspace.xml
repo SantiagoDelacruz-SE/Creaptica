@@ -4,30 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="Nueva rama">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/templates/ciis_app/pagina_inicio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creaptica/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/documentos_ciis/2025/06/06/DOC-CIIS_FACARTES_v4.0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_backend/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,24 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Ft__1&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/santi/OneDrive/Escritorio/DjangoProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "git-widget-placeholder": "Ft__1",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/santi/OneDrive/Escritorio/DjangoProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\santi\\OneDrive\\Escritorio\\DjangoProject\\ciis_frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="DjangoProject" />
@@ -136,7 +121,7 @@
       <workItem from="1749150870703" duration="3915000" />
       <workItem from="1749246434838" duration="3498000" />
       <workItem from="1749280006871" duration="1187000" />
-      <workItem from="1749281208790" duration="321000" />
+      <workItem from="1749281208790" duration="1367000" />
     </task>
     <task id="LOCAL-00001" summary="Nuevos archivos">
       <option name="closed" value="true" />
@@ -154,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749280501240</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Angular">
+      <option name="closed" value="true" />
+      <created>1749281804555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749281804555</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nuevos archivos" />
     <MESSAGE value="Nueva rama" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nueva rama" />
+    <MESSAGE value="Angular" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular" />
   </component>
 </project>
