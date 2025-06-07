@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend CIIS</title>
+</head>
+<body>
+    <h1>{{ mensaje }}</h1>
+    <p>Actualmente hay {{ numero_documentos }} documento(s) registrados.</p>
+    <p>Actualmente hay {{ numero_usuarios_perfil }} perfil(es) de usuario CIIS registrados.</p>
+    <p><a href="{% url 'creaptica:lista_documentos_json_api' %}">Ver Documentos (JSON)</a></p>
+    <p><a href="{% url 'creaptica:lista_perfiles_json_api_v2' %}">Ver Perfiles de Usuario (JSON)</a></p>
+</body>
+</html>
