@@ -40,6 +40,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'creaptica',
     'corsheaders',  # <--- CORRECTO: Ya está añadido aquí.
+
+    # Nuevas apps para la API y autenticación
+    'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+    'django.contrib.sites', # Requerido por dj-rest-auth
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'DjangoProject.urls'
@@ -141,3 +152,11 @@ CORS_ALLOWED_ORIGINS = [
 import os
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+SITE_ID = 1 # Requerido por django.contrib.sites
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}

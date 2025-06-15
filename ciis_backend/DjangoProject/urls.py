@@ -21,7 +21,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ciis/', include('creaptica.urls'))
+    path('ciis/', include('creaptica.urls')),
+
+    # Nuevas URLs para la autenticación de la API
+    path('ciis/api/auth/', include('dj_rest_auth.urls')),
+    path('ciis/api/auth/registration/', include('dj_rest_auth.registration.urls')),
 ]
 
 

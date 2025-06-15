@@ -14,7 +14,7 @@ export interface Documento {
   providedIn: 'root'
 })
 export class DocumentoService {
-  private apiUrl = 'http://127.0.0.1:8000/ciis/api/documentos/';
+  private apiUrl = 'http://127.0.0.1:8000/ciis/api/documentos_simple/';
 
   constructor(private http: HttpClient) { }
 

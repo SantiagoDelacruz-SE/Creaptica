@@ -4,19 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="Nuevos archivos en frontend">
+      <change beforePath="$PROJECT_DIR$/.idea/DjangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_backend/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_backend/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/DjangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_backend/creaptica/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/creaptica/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/lista-documentos/lista-documentos.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/lista-documentos/lista-documentos.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/services/documento.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/services/documento.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,25 +70,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "Ft__1",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/santi/OneDrive/Escritorio/DjangoProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\santi\\OneDrive\\Escritorio\\DjangoProject\\ciis_frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Ft__1&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/santi/OneDrive/Escritorio/DjangoProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\santi\\OneDrive\\Escritorio\\DjangoProject\\ciis_frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\santi\OneDrive\Escritorio\DjangoProject\ciis_frontend\public" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="DjangoProject" />
@@ -122,6 +144,12 @@
       <workItem from="1749246434838" duration="3498000" />
       <workItem from="1749280006871" duration="1187000" />
       <workItem from="1749281208790" duration="1367000" />
+      <workItem from="1749328013967" duration="3147000" />
+      <workItem from="1749483668342" duration="794000" />
+      <workItem from="1749529251357" duration="265000" />
+      <workItem from="1749529529034" duration="3503000" />
+      <workItem from="1749734896720" duration="5391000" />
+      <workItem from="1749845418308" duration="510000" />
     </task>
     <task id="LOCAL-00001" summary="Nuevos archivos">
       <option name="closed" value="true" />
@@ -147,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749281804555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Nuevos archivos en frontend">
+      <option name="closed" value="true" />
+      <created>1749328151223</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749328151224</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +193,7 @@
     <MESSAGE value="Nuevos archivos" />
     <MESSAGE value="Nueva rama" />
     <MESSAGE value="Angular" />
-    <option name="LAST_COMMIT_MESSAGE" value="Angular" />
+    <MESSAGE value="Nuevos archivos en frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos archivos en frontend" />
   </component>
 </project>

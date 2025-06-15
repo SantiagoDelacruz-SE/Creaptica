@@ -1,3 +1,4 @@
+# Ubicación: ciis_backend/creaptica/views.py
 from django.shortcuts import render
 from django.http import JsonResponse  # Para devolver respuestas en formato JSON
 from .models import Documento, PerfilUsuario  # Importa tus modelos
@@ -26,13 +27,11 @@ def listar_documentos_json(request):
         data_documentos.append({
             'id': doc.id,
             'titulo': doc.titulo,
-            'tipo_documento': doc.get_tipo_documento_display(),  # Muestra el nombre legible del choice
-            'autor_principal': doc.autor_principal.username if doc.autor_principal else "N/A",
-            'fecha_carga': doc.fecha_carga.strftime('%Y-%m-%d %H:%M:%S'),  # Formatea la fecha
-            'estado': doc.get_estado_display()
+            'tipo_documento_display': doc.get_tipo_documento_display(),  # Muestra el nombre legible del choice
+            'autor_principal_username': doc.autor_principal.username if doc.autor_principal else "N/A",
         })
 
-    return JsonResponse({'documentos': data_documentos}, json_dumps_params={'ensure_ascii': False})
+    return JsonResponse(data_documentos, safe=False, json_dumps_params={'ensure_ascii': False})
 
 
 def listar_perfiles_json(request):

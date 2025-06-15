@@ -5,9 +5,32 @@
   <title>CiisFrontend</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="FacartesIcono.ico">
 </head>
 <body>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAdiLkKAEHej2nrwARQKyNnOwggPPg1I04",
+    authDomain: "creaptica-ciis.firebaseapp.com",
+    projectId: "creaptica-ciis",
+    storageBucket: "creaptica-ciis.firebasestorage.app",
+    messagingSenderId: "529742461581",
+    appId: "1:529742461581:web:2e29305a1efe87634240c4",
+    measurementId: "G-SM9C9QYCCD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <app-root></app-root>
 </body>
 </html>

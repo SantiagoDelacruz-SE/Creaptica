@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+
+/* Reset básico y tipografía general */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* --- ESTILOS MODIFICADOS PARA EL HEADER --- */
+header {
+  background-color: #4ebaaa; /* Color de fondo de la imagen */
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* Esto empuja los elementos a los extremos */
+  align-items: center; /* Esto los alinea verticalmente */
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 50px; /* Ajusta el tamaño del logo como necesites */
+  margin-right: 15px;
+}
+
+.logo-container h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2b3a42; /* Un color oscuro para el texto */
+}
+
+/* --- ESTILOS DE NAVEGACIÓN (SIN CAMBIOS GRANDES) --- */
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #2b3a42;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: #2b3a42;
+  color: white;
+}
+
+/* Estilo específico para el enlace de "Iniciar sesión" */
+.login-link {
+  border: 2px solid #2b3a42;
+}
+
+.login-link:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+
+.logout-button {
+  background-color: #e53935; /* Un color rojo para la acción de salir */
+  color: white;
+  border: none;
+  padding: 7px 15px; /* Ajustamos padding para que se parezca al 'a' */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit; /* Hereda la fuente del resto de la app */
+  font-size: inherit; /* Hereda el tamaño de fuente */
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c62828;
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

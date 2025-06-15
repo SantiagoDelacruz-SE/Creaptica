@@ -1,7 +1,7 @@
 // Ubicación: src/app/components/lista-documentos/lista-documentos.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Documento, DocumentoService } from '../../services/documento.service';
-import { CommonModule } from '@angular/common'; // Para usar *ngFor y *ngIf
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-lista-documentos',
@@ -20,14 +20,12 @@ export class ListaDocumentosComponent implements OnInit {
   ngOnInit(): void {
     this.documentoService.getDocumentos().subscribe({
       next: (data) => {
-        // Cuando la petición es exitosa
         this.documentos = data;
         this.cargando = false;
       },
       error: (err) => {
-        // Cuando hay un error
         console.error('Error al obtener los documentos:', err);
-        this.error = 'No se pudieron cargar los documentos. Asegúrate de que el backend de Django esté funcionando.';
+        this.error = 'No se pudieron cargar los documentos. Asegúrate de que el backend de Django esté funcionando y la URL de la API sea correcta.';
         this.cargando = false;
       }
     });

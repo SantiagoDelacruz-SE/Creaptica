@@ -1,0 +1,33 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+    <p>Ingresa a la plataforma CIIS</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="username">Nombre de usuario</label>
+        <input type="email" id="username" formControlName="username" placeholder="tu.correo@udenar.edu.co">
+        <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.touched || loginForm.get('username')?.dirty)" class="error-message">
+          <span *ngIf="loginForm.get('username')?.errors?.['required']">El nombre de usuario es requerido.</span>
+          <span *ngIf="loginForm.get('username')?.errors?.['username']">Por favor, ingresa un nombre de usuario válido.</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" formControlName="password" placeholder="Tu contraseña">
+        <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.touched || loginForm.get('password')?.dirty)" class="error-message">
+          <span *ngIf="loginForm.get('password')?.errors?.['required']">La contraseña es requerida.</span>
+        </div>
+      </div>
+
+      <div *ngIf="loginError" class="error-message server-error">
+        {{ loginError }}
+      </div>
+
+      <button type="submit" [disabled]="loginForm.invalid">Ingresar</button>
+
+    </form>
+  </div>
+</div>

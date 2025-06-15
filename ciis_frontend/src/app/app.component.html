@@ -1,14 +1,26 @@
 <header>
+  <div class="logo-container">
+    <img src="" alt="">
+    <h1>Plataforma CREAPTICA - Facultad de Artes</h1>
+  </div>
+
   <nav>
-    <h1>Plataforma CIIS - Facultad de Artes</h1>
     <ul>
       <li>
-        <a routerLink="/inicio">Inicio</a>
+        <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
       </li>
       <li>
-        <a routerLink="/documentos">Documentos</a>
+        <a routerLink="/documentos" routerLinkActive="active">Documentos</a>
       </li>
-      </ul>
+
+      <li *ngIf="!(isLoggedIn$ | async)">
+        <a routerLink="/login" routerLinkActive="active" class="login-link">Iniciar sesión</a>
+      </li>
+
+      <li *ngIf="isLoggedIn$ | async">
+        <button (click)="onLogout()" class="logout-button">Cerrar sesión</button>
+      </li>
+    </ul>
   </nav>
 </header>
 
