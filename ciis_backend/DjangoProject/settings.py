@@ -40,16 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'creaptica',
     'corsheaders',  # <--- CORRECTO: Ya está añadido aquí.
-
-    # Nuevas apps para la API y autenticación
-    'rest_framework',
-    'rest_framework.authtoken',
-    'dj_rest_auth',
-    'django.contrib.sites', # Requerido por dj-rest-auth
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'dj_rest_auth.registration',
 ]
 
 MIDDLEWARE = [
@@ -153,10 +143,12 @@ import os
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-SITE_ID = 1 # Requerido por django.contrib.sites
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'creaptica.firebase_auth.FirebaseAuthentication',
     ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
 }

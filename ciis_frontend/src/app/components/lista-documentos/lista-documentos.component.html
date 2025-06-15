@@ -1,21 +1,26 @@
-<h2>Lista de Documentos</h2>
+<div *ngIf="userProfile$ | async as profile; else showLoginMessage">
+  <h1>Documentos</h1>
+  <p>Tu rol es: <strong>{{ profile.perfil_ciis.rol }}</strong></p>
 
-<div *ngIf="cargando">
-  <p>Cargando documentos...</p>
-</div>
+  <button *ngIf="profile.perfil_ciis.rol === 'ADMIN_CIIS' || profile.perfil_ciis.rol === 'INVESTIGADOR'">
+    Subir Nuevo Documento
+  </button>
 
-<div *ngIf="error" class="error">
-  <p>{{ error }}</p>
-</div>
+  <div *ngIf="isLoading">Cargando documentos...</div>
+  <div *ngIf="error" class="error-message">{{ error }}</div>
 
-<div *ngIf="!cargando && !error && documentos.length > 0">
-  <ul>
+  <ul *ngIf="!isLoading && documentos.length > 0">
     <li *ngFor="let doc of documentos">
-      <strong>{{ doc.titulo }}</strong> (Tipo: {{ doc.tipo_documento_display }}) - Autor: {{ doc.autor_principal_username }}
+      <span>{{ doc.titulo }} - {{ doc.descripcion }}</span>
+      <button *ngIf="profile.perfil_ciis.rol === 'ADMIN_CIIS'">Eliminar</button>
     </li>
   </ul>
+
+  <div *ngIf="!isLoading && !error && documentos.length === 0">
+    No hay documentos para mostrar.
+  </div>
 </div>
 
-<div *ngIf="!cargando && !error && documentos.length === 0">
-  <p>No hay documentos para mostrar.</p>
-</div>
+<ng-template #showLoginMessage>
+  <p>Por favor, <a routerLink="/login">inicia sesión</a> para ver los documentos.</p>
+</ng-template>

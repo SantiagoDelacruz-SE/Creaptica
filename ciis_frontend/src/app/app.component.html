@@ -1,7 +1,6 @@
 <header>
   <div class="logo-container">
-    <img src="" alt="">
-    <h1>Plataforma CREAPTICA - Facultad de Artes</h1>
+    <h1>Plataforma CREAPTICA</h1>
   </div>
 
   <nav>
@@ -13,13 +12,22 @@
         <a routerLink="/documentos" routerLinkActive="active">Documentos</a>
       </li>
 
-      <li *ngIf="!(isLoggedIn$ | async)">
-        <a routerLink="/login" routerLinkActive="active" class="login-link">Iniciar sesión</a>
-      </li>
+      <ng-container *ngIf="userProfile$ | async as profile; else showLogin">
+        <li>
+          <span class="welcome-message">
+            Bienvenido, {{ profile.perfil_ciis.rol | titlecase }}
+          </span>
+        </li>
+        <li>
+          <button (click)="logout()" class="logout-button">Cerrar Sesión</button>
+        </li>
+      </ng-container>
 
-      <li *ngIf="isLoggedIn$ | async">
-        <button (click)="onLogout()" class="logout-button">Cerrar sesión</button>
-      </li>
+      <ng-template #showLogin>
+        <li>
+          <a routerLink="/login" routerLinkActive="active" class="login-link">Iniciar Sesión</a>
+        </li>
+      </ng-template>
     </ul>
   </nav>
 </header>

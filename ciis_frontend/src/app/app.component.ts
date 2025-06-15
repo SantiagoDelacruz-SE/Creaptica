@@ -1,33 +1,28 @@
-// Ubicación: src/app/app.component.ts
-import { Component, OnInit } from '@angular/core'; // Añade OnInit
+// ciis_frontend/src/app/app.component.ts
+import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
+import { AuthService } from './services/auth.service';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { AuthService } from './services/auth.service'; // 1. Importa el servicio
-import { Observable } from 'rxjs'; // 2. Importa Observable
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, CommonModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'] // Asegúrate que la extensión es .scss si usas SASS
+  styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'ciis_frontend';
+  // CORREGIDO: Declaramos la propiedad primero
+  userProfile$: Observable<any>;
 
-  // 3. Propiedad para guardar el estado de autenticación como un Observable
-  isLoggedIn$!: Observable<boolean>;
-
-  // 4. Inyecta el AuthService
-  constructor(private authService: AuthService) {}
-
-  ngOnInit(): void {
-    // 5. Asigna el observable del servicio a nuestra propiedad local
-    this.isLoggedIn$ = this.authService.isAuthenticated;
+  constructor(public authService: AuthService) {
+    // CORREGIDO: La inicializamos dentro del constructor
+    this.userProfile$ = this.authService.userProfile$;
   }
 
-  // 6. Método para manejar el logout desde el template
-  onLogout(): void {
+  logout(): void {
     this.authService.logout();
   }
 }

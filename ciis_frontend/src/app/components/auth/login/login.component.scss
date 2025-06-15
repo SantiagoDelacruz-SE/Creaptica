@@ -1,31 +1,53 @@
+/* ciis_frontend/src/app/components/auth/login/login.component.scss */
+
+/* Contenedor de página completa con la imagen de fondo */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 200px); /* Ajusta la altura para centrar en el espacio disponible */
-  padding: 40px;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 20px;
+
+  // ¡Aquí va la imagen de fondo!
+  // Asegúrate de que la ruta sea correcta.
+  background-image: url('/assets/images/facartes-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* La "caja" o tarjeta que contiene el formulario */
 .login-box {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con ligera transparencia */
   padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 400px;
   text-align: center;
-
-  h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  p {
-    margin-bottom: 30px;
-    color: #666;
-  }
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px); /* Efecto "frosty" para el fondo */
 }
 
+/* Títulos y textos dentro de la caja */
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 30px;
+  color: #7f8c8d;
+}
+
+/* Estilos para los campos del formulario */
 .form-group {
   margin-bottom: 20px;
   text-align: left;
@@ -33,51 +55,83 @@
   label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    font-weight: 600;
+    color: #34495e;
   }
 
   input {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: #4ebaaa;
+      box-shadow: 0 0 0 3px rgba(78, 186, 170, 0.25);
+    }
   }
 }
 
+/* Estilos para el botón de login */
 button {
   width: 100%;
   padding: 15px;
   border: none;
-  border-radius: 5px;
-  background-color: #204a53;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4ebaaa, #3b8c8c);
   color: white;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
 
   &:disabled {
-    background-color: #ccc;
+    background: #bdc3c7;
     cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
   }
 
   &:not(:disabled):hover {
-    background-color: #004c5a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 
-.error-message {
-  color: #e53935;
-  font-size: 0.875rem;
-  margin-top: 6px;
+/* Mensajes de error */
+.validation-error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  padding-top: 4px;
 }
 
 .server-error {
-  background-color: #ffebee;
-  border: 1px solid #e57373;
-  border-radius: 4px;
+  color: #c0392b;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  border-radius: 8px;
   padding: 10px;
   margin-bottom: 20px;
-  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Enlace para registrarse */
+.register-link {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+
+  a {
+    color: #4ebaaa;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
