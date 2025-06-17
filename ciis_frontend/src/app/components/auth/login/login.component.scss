@@ -5,11 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  min-height: 100vh;
   padding: 20px;
 
-  // ¡Aquí va la imagen de fondo!
-  // Asegúrate de que la ruta sea correcta.
   background-image: url('/assets/images/facartes-background.jpg');
   background-size: cover;
   background-position: center;
@@ -20,9 +18,8 @@
   box-sizing: border-box;
 }
 
-/* La "caja" o tarjeta que contiene el formulario */
 .login-box {
-  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con ligera transparencia */
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -30,10 +27,10 @@
   max-width: 400px;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(5px); /* Efecto "frosty" para el fondo */
+  backdrop-filter: blur(5px);
 }
 
-/* Títulos y textos dentro de la caja */
+
 h2 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -47,7 +44,7 @@ p {
   color: #7f8c8d;
 }
 
-/* Estilos para los campos del formulario */
+
 .form-group {
   margin-bottom: 20px;
   text-align: left;

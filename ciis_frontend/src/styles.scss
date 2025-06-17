@@ -106,3 +106,35 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* --- AÑADE ESTE CÓDIGO AL FINAL DEL ARCHIVO --- */
+
+/* 1. Aseguramos que el contenedor raíz ocupe toda la altura */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+/* 2. Hacemos que el componente raíz (donde están tu header, main y footer)
+      se comporte como el contenedor principal de la maquetación. */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima de toda la pantalla */
+  width: 100%;
+}
+
+/* 3. ¡La magia! El <main> se estirará para ocupar todo el espacio
+      disponible, empujando el footer hacia abajo.
+      Además, lo convertimos en flex para centrar su contenido (el login). */
+main {
+  flex: 1; /* Hace que el main crezca */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
