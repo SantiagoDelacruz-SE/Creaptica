@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for DjangoProject project.
 
@@ -38,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'creaptica',
+    'corsheaders',  # <--- CORRECTO: Ya está añadido aquí.
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # <--- 1. AÑADIDO: El middleware de CORS
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'DjangoProject.urls'
@@ -124,7 +128,27 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Al final de settings.py
+# --- 2. AÑADIDO: Configuración de CORS ---
+# Orígenes que tienen permitido hacer solicitudes al backend
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4200",  # El origen de tu app de Angular en desarrollo
+    "http://127.0.0.1:4200",
+]
+# En caso de necesitar que cualquier origen pueda conectarse (menos seguro):
+# CORS_ORIGIN_ALLOW_ALL = True
+
+
+# --- Configuración de Archivos Media ---
 import os
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # BASE_DIR ya está definido al inicio de settings.py
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'creaptica.firebase_auth.FirebaseAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}

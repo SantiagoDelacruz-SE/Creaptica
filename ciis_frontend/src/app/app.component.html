@@ -1,0 +1,41 @@
+<header>
+  <div class="logo-container">
+    <h1>Plataforma CREAPTICA</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+      </li>
+      <li>
+        <a routerLink="/documentos" routerLinkActive="active">Documentos</a>
+      </li>
+
+      <ng-container *ngIf="userProfile$ | async as profile; else showLogin">
+        <li>
+          <span class="welcome-message">
+            Bienvenido, {{ profile.perfil_ciis.rol | titlecase }}
+          </span>
+        </li>
+        <li>
+          <button (click)="logout()" class="logout-button">Cerrar Sesión</button>
+        </li>
+      </ng-container>
+
+      <ng-template #showLogin>
+        <li>
+          <a routerLink="/login" routerLinkActive="active" class="login-link">Iniciar Sesión</a>
+        </li>
+      </ng-template>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>© 2025 - Proyecto de Grado - Santiago Delacruz</p>
+</footer>

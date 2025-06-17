@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="Nuevos archivos e implementacion de Firebase No.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/auth/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/auth/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/styles.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SantiagoDelacruz-SE&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SantiagoDelacruz-SE/Creaptica.git&quot;,
+    &quot;accountId&quot;: &quot;edbf507d-9564-4fe4-9080-f269698db798&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xeEurSCvtACl871KoHC0gCwuqn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Ft__1&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/santi/OneDrive/Escritorio/DjangoProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\santi\\OneDrive\\Escritorio\\DjangoProject\\ciis_frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\santi\OneDrive\Escritorio\DjangoProject\ciis_frontend\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
+      <module name="DjangoProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="" />
+      <created>1748290365134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748290365134</updated>
+      <workItem from="1748290366068" duration="3505000" />
+      <workItem from="1748362490099" duration="116000" />
+      <workItem from="1748464653779" duration="479000" />
+      <workItem from="1748465757831" duration="1440000" />
+      <workItem from="1749065829412" duration="1942000" />
+      <workItem from="1749150870703" duration="3915000" />
+      <workItem from="1749246434838" duration="3498000" />
+      <workItem from="1749280006871" duration="1187000" />
+      <workItem from="1749281208790" duration="1367000" />
+      <workItem from="1749328013967" duration="3147000" />
+      <workItem from="1749483668342" duration="794000" />
+      <workItem from="1749529251357" duration="265000" />
+      <workItem from="1749529529034" duration="3503000" />
+      <workItem from="1749734896720" duration="5391000" />
+      <workItem from="1749845418308" duration="510000" />
+      <workItem from="1749971680119" duration="4546000" />
+      <workItem from="1750056150621" duration="386000" />
+      <workItem from="1750166861451" duration="338000" />
+    </task>
+    <task id="LOCAL-00001" summary="Nuevos archivos">
+      <option name="closed" value="true" />
+      <created>1749280180504</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749280180504</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Nueva rama">
+      <option name="closed" value="true" />
+      <created>1749280501240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749280501240</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Angular">
+      <option name="closed" value="true" />
+      <created>1749281804555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749281804555</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Nuevos archivos en frontend">
+      <option name="closed" value="true" />
+      <created>1749328151223</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749328151224</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Nuevos archivos e implementacion de Firebase">
+      <option name="closed" value="true" />
+      <created>1749971806649</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749971806650</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Nuevos archivos e implementacion de Firebase No.2">
+      <option name="closed" value="true" />
+      <created>1749977163019</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749977163019</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nuevos archivos" />
+    <MESSAGE value="Nueva rama" />
+    <MESSAGE value="Angular" />
+    <MESSAGE value="Nuevos archivos en frontend" />
+    <MESSAGE value="Nuevos archivos e implementacion de Firebase" />
+    <MESSAGE value="Nuevos archivos e implementacion de Firebase No.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos archivos e implementacion de Firebase No.2" />
+  </component>
+</project>
