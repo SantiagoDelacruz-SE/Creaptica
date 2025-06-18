@@ -1,21 +1,20 @@
-/* Ubicación: src/app/components/inicio/inicio.component.scss */
+/* src/app/components/inicio/inicio.component.scss */
 
 .hero-container {
-  height: 100%; // Asegúrate de que ocupe todo el espacio vertical del main
-  width: 100%;  // Asegúrate de que ocupe todo el espacio horizontal del main
-
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  position: relative; // Mantener relative para el z-index de .hero-text
+  position: relative;
   overflow: hidden;
 }
 
 .hero-text {
   position: relative;
-  z-index: 1; /* Para que el texto quede por encima de la superposición del main */
+  z-index: 1;
   max-width: 800px;
   padding: 20px;
 }

@@ -1,46 +1,39 @@
 /* src/styles.scss */
-
-/* Reset básico y tipografía general */
 body, html {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: #f4f4f4; // Mantén un color de fallback
+  background-color: #f4f4f4;
   color: #333;
-  height: 100%; // Asegura que html y body tomen todo el alto
+  height: 100%;
 }
 
-/* 1. Aseguramos que el contenedor raíz ocupe toda la altura */
 body {
   display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
+  flex-direction: column;
 }
 
-/* 2. Hacemos que el componente raíz se comporte como el contenedor principal de la maquetación. */
+
 app-root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Altura mínima de toda la pantalla */
+  min-height: 100vh;
   width: 100%;
 }
 
-/* 3. Estilos para el contenido principal (main) - Aquí colocamos la imagen de fondo principal */
+
 main {
-  flex: 1; /* Hace que el main crezca para ocupar el espacio disponible */
-  display: flex; /* Para centrar los componentes internos */
+  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-
-  // **NUEVOS ESTILOS PARA LA IMAGEN DE FONDO GLOBAL DEL MAIN**
-  background-image: url('/images/facartes-background.jpg'); // Ruta correcta desde el servidor web
+  background-image: url('/images/facartes-background.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; // Para que no se repita si la imagen es pequeña
-  background-attachment: fixed; // Para que la imagen quede fija al hacer scroll
-
-  // Superposición oscura para el fondo, aplicada directamente al main
-  position: relative; // Necesario para que el ::before se posicione correctamente
-  overflow: hidden; // Para que nada se salga del main si la imagen es muy grande
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 
 main::before {
@@ -50,21 +43,20 @@ main::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura */
-  z-index: 0; /* Asegura que la superposición esté detrás del contenido de los componentes */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
-/* --- ESTILOS DEL HEADER (SIN CAMBIOS GRANDES) --- */
 header {
-  background-color: #4ebaaa; /* Color de fondo de la imagen */
+  background-color: #4ebaaa;
   padding: 10px 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  position: relative; // Para que el z-index de los elementos del header funcione
-  z-index: 10; // Asegura que el header esté siempre encima de todo
+  position: relative;
+  z-index: 10;
 }
 
 .logo-container {
@@ -136,14 +128,14 @@ header nav ul li a.active {
   background-color: #c62828;
 }
 
-/* Estilos para el pie de página */
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
-  position: relative; // O fixed si quieres que siempre esté abajo
+  position: relative;
   bottom: 0;
   width: 100%;
-  z-index: 10; // Asegura que el footer esté siempre encima de todo
+  z-index: 10;
 }
