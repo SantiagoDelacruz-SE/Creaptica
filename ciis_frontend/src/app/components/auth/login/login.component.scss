@@ -2,20 +2,15 @@
 
 /* Contenedor de página completa con la imagen de fondo */
 .login-container {
+  /* ELIMINA ESTAS PROPIEDADES (background-image, background-size, background-position, position, min-height, width, ::before) */
+  /* El main ahora maneja el fondo. Este contenedor solo necesita centrar su caja de login. */
+
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-
-  background-image: url('/assets/images/facartes-background.jpg');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
+  min-height: 100%; /* Asegúrate de que ocupe todo el espacio vertical del main */
+  width: 100%; /* Asegúrate de que ocupe todo el ancho del main */
+  box-sizing: border-box; // Mantenlo para consistencia
 }
 
 .login-box {
@@ -28,6 +23,8 @@
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(5px);
+  position: relative; /* Necesario para que el z-index funcione correctamente */
+  z-index: 1; /* Asegura que la caja de login esté por encima de la superposición del main */
 }
 
 

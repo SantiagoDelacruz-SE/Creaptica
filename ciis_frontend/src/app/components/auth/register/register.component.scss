@@ -8,16 +8,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // AÑADE ESTAS PROPIEDADES PARA QUE EL CONTENEDOR OCUPE ESPACIO
+  min-height: 100%; /* Ocupa toda la altura disponible de su padre (main) */
+  width: 100%; /* Opcional, pero asegura que abarque el ancho */
+  box-sizing: border-box; /* Para que el padding se incluya en el width/height */
+
+  // Si habías movido background-image al main, asegúrate de que NO esté aquí
+  // Si todavía tienes un background-image aquí, elimínalo o coméntalo.
 }
 
 .register-box {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo semitransparente para la caja del formulario */
   padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; // Un poco más redondeado para mejor estética
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); // Sombra más pronunciada
   width: 100%;
-  max-width: 420px;
+  max-width: 400px; // Un poco más ancho
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px); // Efecto de desenfoque, similar al login
 
   h2 {
     margin-top: 0;
@@ -96,4 +105,14 @@ button {
       text-decoration: underline;
     }
   }
+}
+
+.error-message {
+  color: #c0392b; /* Rojo más oscuro */
+  background-color: #f2dede; /* Fondo rosa claro */
+  border: 1px solid #ebccd1; /* Borde rojo claro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
 }

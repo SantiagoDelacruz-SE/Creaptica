@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="Nuevos archivos e implementacion de Firebase No.2">
+    <list default="true" id="5b3dbbb7-6af9-42e4-a0de-1538bad5df83" name="Changes" comment="Cambios en el frontend 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_backend/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/auth/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/auth/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/auth/register/register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/auth/register/register.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/app/components/inicio/inicio.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciis_frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciis_frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ciis_frontend/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +144,10 @@
       <workItem from="1749845418308" duration="510000" />
       <workItem from="1749971680119" duration="4546000" />
       <workItem from="1750056150621" duration="386000" />
-      <workItem from="1750166861451" duration="338000" />
+      <workItem from="1750166861451" duration="1299000" />
+      <workItem from="1750169827829" duration="948000" />
+      <workItem from="1750176889216" duration="2306000" />
+      <workItem from="1750206256218" duration="4347000" />
     </task>
     <task id="LOCAL-00001" summary="Nuevos archivos">
       <option name="closed" value="true" />
@@ -188,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749977163019</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cambios en el frontend">
+      <option name="closed" value="true" />
+      <created>1750168619999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750168619999</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Cambios en el frontend 2">
+      <option name="closed" value="true" />
+      <created>1750168672236</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750168672236</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +226,8 @@
     <MESSAGE value="Nuevos archivos en frontend" />
     <MESSAGE value="Nuevos archivos e implementacion de Firebase" />
     <MESSAGE value="Nuevos archivos e implementacion de Firebase No.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nuevos archivos e implementacion de Firebase No.2" />
+    <MESSAGE value="Cambios en el frontend" />
+    <MESSAGE value="Cambios en el frontend 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en el frontend 2" />
   </component>
 </project>
