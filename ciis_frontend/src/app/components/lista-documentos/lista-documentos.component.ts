@@ -25,15 +25,15 @@ export class ListaDocumentosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.documentoService.getDocumentos().subscribe({
-      next: (data) => {
-        this.documentos = data;
-        this.isLoading = false;
-      },
-      error: (err) => {
-        this.error = 'No se pudieron cargar los documentos. Puede que no tengas permisos.';
-        this.isLoading = false;
-        console.error(err);
+  this.documentoService.getDocumentos().subscribe({ // <-- CORREGIDO: getDocuments()
+    next: (data) => {
+      this.documentos = data;
+      this.isLoading = false;
+    },
+    error: (err) => {
+      this.error = 'No se pudieron cargar los documentos. Puede que no tengas permisos.';
+      this.isLoading = false;
+      console.error(err);
       },
     });
   }

@@ -16,6 +16,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
   return authService.idToken$.pipe(
     take(1), // Toma el valor actual del token y se desuscribe
     switchMap(token => {
+      console.log(token)
       if (token) {
         const clonedReq = req.clone({
           headers: req.headers.set('Authorization', `Bearer ${token}`),
